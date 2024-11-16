@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .navbar {
+        background-color: black;
+        height: 75vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav1 {
+        color: white;
+
+    }
+
+    .sumbar {
+        color: white;
+        border: white;
+        justify-content: space-between;
+
+
+    }
+
+    .subscribe {
+        text-decoration: none;
+        font-size: 25px;
+        padding-left: 25px;
+        padding-right: 35px;
+        padding-top: 10px;
+        padding-bottom: 10PX;
+        background-color: red;
+        color: white;
+
+
+    }
+
+    .tumbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rumbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+
+    }
+    .button input{
+       
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="nav1">
+            <h1>Think32</h1>
+            <p>thoughtful MARKETING for growing <br> dental practice</p>
+        </div>
+        <div class="sumbar">
+            <p>DENTAL MARKETING INSIGHTS FOR CLEVER DENTISTS</p>
+            <P>DIRECT TO YOUR INBOX</P><br>
+            <div class="button">
+                <input type="text" placeholder="your email">
+                <a class="subscribe">subscribe</a>
+            </div>
+        </div>
+        <div class="tumbar">
+            <a href="">follow us</a>
+            <div>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAmJJREFUSEvFlU2IT2EUxn8PiojZTFYYhUISIklYIKU0MZphsLHxsVDko8hCiQwhKwsW0vjIZ5QSOymJpBg0kZQNK7LydbyP3v/0d+d/m39qmru79573PM95nnPOK/r5UT/nZ2AAImICsANYAEyDUiIBvAAeACcldRcV6VVBRGwGTgFDgA/AI+B1iZSzgBnAWOAHsFXSmerYfwAiYnZO2AWslPS2Ho8iwlXeAsYBcyQ9q5wrAlwHlgOTJb3vK3lEbEjyHQC+pGo3Ak9SRTcltZQBOGmXJIP0PBExCFgKTAV+Aa+A+/nbXUspqSkiDNAoaXwZwFegU9KWSkBEWN/LwLxCRTb2bNL9EzBa0rmIsALLJI0oA/gNHJO02wGZ+UPAjHYC94DBmXkH4K5ZKMnd5HgTWS3JMX+fogcOPCxpbz7Qmtm3SrpSkK0teXUJaJZkgw1wMcnXJsmSlgJ0SNqTD5jlLmCkpG8FgEbgc2rng5L25/hOoF1SD/FaFXhgtucDRwDL1SDJ/lQbXwE4JGlfjj8PrO8L4ERK5il2yW63q1nXawWAdjdEQSK/r+nLg+oKrKVNbspS2WRP+BLgKPAGWFQw2Z4MK/PAOrtNN1W16Zhs5vwabbpW0seqWLfpYkkNZQBuu+6SQWsGVgDfgTvA7QrzKoCnwChJk8oArOGq1JpT6lkVBU+mp/31HLiQtuq6MoCZiaVZOLBF0ruCLDVf0wQ7+Y3s1VxJztF7DnLnVNa1DX6cJfGvn8DLNIhDgYnZbH8fDngL+/82SaerWdS80f7zwjlea70PzJVZj+71xvR7BX8AWsb9GfXCJjsAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPpJREFUSEvtlLtOQkEQhr+/IIZaaHwE6SwobGh4ABOjbwCB0oaKxsLeDhNbOk9DbC0oaOUBJLGUBHgFMnCSKYw5ei6eTSjYarK783+7cxOBlwLrc1gAM2sAD0ATqAFfwFjS8LdIZP6BmZ0Bn8DJD7FI0k0ZgBHQSxB6kXRbBuAduHChKdCWtE0rkjwhWgF1F+xLekoTj8/zADbAqYt2JT3/G2BmcWzPXWgAVN1+BeZuzyS9FcqBmUXAdcpL7yQ9hgRcSZoUBdwDLXe+3DdZxe0PYOl2R9KiEOC7k5mtvXvj7XKSfATkbbRjDv7u1+BlmmWwJd3JPE0PFrAD05RgGZjkNQQAAAAASUVORK5CYII=" />
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbNJREFUSEvd1c2LjXEUB/DPF0WNrFgo8lKSQpIVS1KkvKSJpixYSPZE5A9gY0E2mpSNzSyUsrCRbEQRCysTJUpWUt7q5/7qXl137n1m7tRs5uye55zz/T7ne16emGPLHOObZwSllJEk35tkK6UswxUcwDr8xg1cxEocrM9JSsX5J1EpZSHeYDTJ60EkpZRH2N3H/wGrcTzJvY6/m2AtJvEFh5M87QUppWzHi4YKn+Mx7iZ52VvBEnzDojbAbVxO8qkDWEoZq8kNBFXes0nuTKmgviil1K/e2QPwBPfxDNtwvYFgPMnJbn+3REuxEQ+xfJb7cTXJuUEEq/AeX1tTsGKWBFWem4MIFuAd1swSvKZtSvK2L0G7B0daQXXEOo0ehmsyyfrehCmnopQyikvYMgw6ziS5NROC/XgwJHhdsg1Jfk1L0JaqzvGJGZL8wa4kdYynWN9rWkqpDd+MCzjWQFTvzakk44Ni+vVgBDtwHvsawH9gLMlEU6Xdi7YH17C1+wgOSK7LeLq1tVX7RvuvgvYpPopD2IvFLZl+4jM+ol7SiSSvpgPu+OfZH22mZQ8TN+cS/QWHhHkZrTvZMgAAAABJRU5ErkJggg==" />
+            </div>
+        </div>
+        <div class="rumbar">
+            <a href="">call us</a><br>
+
+            <a href="">0285419786</a>
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

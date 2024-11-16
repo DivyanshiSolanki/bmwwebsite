@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="OIP.jpg" alt="">
+        </div>
+        <div class="library">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArtJREFUWEftmD1oFEEUx9/bS84EDMQihZWVhdhETJHKRhBRgpGIIBJBDIhgc/txM3cILuLd7Wz29kCMkkJSiPhBCjUWYmHARouAYqlV2thEDFzuws7ozO1BOHO5RHM3KfKq2dnZmR///7732EXYZYG7jAf2gFo50lShkLGr9YdNQmaKhcIxNIxBOSc4/2JlMp8b19TXM8b6yuVyxXXdaiuAxvtNgYqMfagvtgg5IQ8XAAoSAWYU5N9rhgBxjHM+jIh3LELmtQIFjF1GgOtKRYBPNiFprUD5fH5gXyIxWxMRuJFMjqZSqeXtQO2oZfLgImMlADgux1yI+w6lL7QC+YXC6YRhZJVtQny3Kb2mFSgMw16xtjYHAEkFlUiM27a9uFWoHbdMHhx43i1EPKUghHhqUfpQK1DI2JAACGPblm1Kz9USr3W0RSGZZYHnvULE/rhumSYhC61xaum5YfxLYVy/UdHzbgDipVildzald7UCBUFwCKPocQxR/VUun9lKK2mbQqomed4jQDwsxxHn+XQm87aVSm0FmvS8iwbizdi2BZtSUytQqVTq59XqSwAwZJZVouhCNpv9sRlUWxVSNYkxHwGGlUoA0zYhT7QCFRk7+YfldlwkFy1Kx7UCua6b7OvpmQPEXgUSRRNWNvutGVTbLVPZxhgBgLNyzAFmHULuaQXyfX8wIYSCEEIsr6yujrquyzeC6ohCspWEjM0KgAGlkmEQx3E+6gSCwPcnUIgrsUrzNqW1F70hOqUQlHK5g7yr63m9lWB394hpmmVtQHFNmkaAIwoC0bfS6TdagcLJyfOC81Rs21ebUtVW1kfHLJOHTk1N7V9dWXkNAF3yuhJFY42tpKNAyjbPy6FhHAUh3nPDeOY4ztKWFPqfT+lmRU/OPygUDixVKj+3XYc227Sd9/Z+x7RSd9cp9BtWy3JDESFDrQAAAABJRU5ErkJggg=="/>
+            &nbsp;&nbsp;&nbsp;&nbsp; Your Library  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;+
+    
+        </div>
+        <div class="overflow">
+        <section class="create">
+        <div class="text">
+            Create your first playlist
+        </div>
+        <div class="text1">
+            Its easy,we'll help you
+        </div>
+        <button class="button1">Create Playlist</button>
+        </section>
+    
+    <section class="create1">
+        <div class="text2">
+            Let find some podcast to follow
+        </div>
+<div class="text3">
+    we 'll keep you updated on new
+    episode
+    <button class="button1">Browers Podcast</button>
+</div>
+    </section>
+        </div>
+        <div class="content">
+            Legal  saftey & Privacy center
+            Privacy Policy Cookies Aboutads
+            Assessiblity
+            <div class="content1">
+             Cookies
+
+            </div>
+        
+        <button class="button2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABSdJREFUWEftmH/MllMYx7/fc0QMYWVIo7bCKENj0YoRtgyxIURlTevXpGaYrBSWrEwllFpR+Mfkx/xKQ5uyMiGtZKXpx4SN2mx+3PfXznNfz9153vd+7ud50x/N3Nv7x3nOua7zOdd1neu6zkscYh8PMR78N4Ak9UWaDgZ5EYBO9heM/ROAPZA+g3NLSa5uqweatpCk9gBGQroHwGlNbrQV5CwA80n+0YxMU0CShkOaDqBjM0oL1uwBOZ7kskbyDYGUJNNB3leiaDvIswAkkL4EcGbdteQkktPKoOoCSSLSdBHIOyMFIT5eAPlA/hvZj+SqMJbUC9LnAA6z+eUArgWiyyPNpvfj6kHVB0qS2SDH5ILSy3BuDNL0KZBDKr9LS+n97bFyJUk4xFCbnwvnFkFaDODsSNcUej+5CKoQSNJ4SDMjBdPp/f2Sjof0I4B2lTnyXJJf1QBJ3SFtNqvsBXkygBTSGwAGRJYdQvKlllCtgCR1gPQDgGNs08kkp5hLhkFaaEo+pHNXFJ1SafomgGtMfiTJ5yS1g/Ra/juwC2RXkn/GOloDJckjICfZohV0Lj9Vi43GkJxbCCTdDOkVm/uGzp1jB2oPaTuAEw12NMln6gJJOtxccpwJ9Cf5SVVAafoLgBNsrjvJ7+oAhY1Dkjza1nYmucugRkOaY3Lb6dzpZUADIb1lC3bSuVNzGKkrpK023kXnOhfBRPArAFxuQANIhnG4ieHQIcYyEPJ8kl9U5WpcpiRZCHJYZVJaRO+HR0BXQ3rHxqvoXL9SoCSZC3KUbTqO5OxcV5I8lqcOaRq9r4ZIbXFVmobE1suU1NwCSUMDpMEuo/e3lQJJYyE9bevn0fsMLrPSIAvwMHyfzl1VbKE03QngFJMKwRbiIPvIPgCutNEaSO+VAQE4A+QttmYLpLhsdAQ52uY20rk8R9W6LE1/B3Bkg40O9vRvdC67RDUpPZgyTfflN+Ngb1tf3z46d2w9oBD9PcxlIcf8HLmsN4CBNl4H6e02uOxbhNKz/+uUBzywic6F4lxooY8A9LeYGUyymtxCIN4E6VWTe53ODSoDkjQKUpY4pQX0fkR1vaTBUUytpHNZemjlsiSZAXKiKWl5M/pCqlR1AOvp3HmlQEkyC2Ro5sKFeJjk1BwoSZ4Febft8zi9f7AYSOoD6VOb3EDnekanOgnSbhvvpXMdSoHS9F0A2XUmbyQZ6ljGkKYbAWRuInuTDC1LgYVCDyTtyK8+eSnJjyNFodJX61BPkhuKoCrtrvQrgCNs0y4kg97g+ssgrTS5bXSuW6yjqNpPhDTDFm0C2YvkX3ayUFaywCbLimtcgnbQuS4GEyr+15UclekoL64mdBSk7/OXhLQEzg0lKUmhyZ9nsMvp3PWFFkqSJVETN5PeT7AO9EWQ1Qy/E2S3hu2HQY2A9Hy+mTSH3o+V1Nlcag5nD5JbYihJXSBtA+DNCheSXKu4tmXWuZVknApax1CN4tbN/QeVmyE9CeCGLDq1mN5n7ap9qm1914AMvdH8qOwEmIdIPlpk3dJXh5JkAci7IsHQ3YWKf13+G3lx9UEo6QJIa6N0EupdyGvhTZd90ix6f28RTMVw9SaiE08NJypZtxlk6AgdpPX5dW4toPCcIhksXPdrCJQdqtJ6hJt3oA/FEMChJ8pz0QFbaL+lK0/pEOwT2vCUDtZ7AsASkn838kZTLmuppHJ9gUuQpneE9jP6Z4Osf9oNaTWcW0ZyXTMQ8ZqmXNZWpf9m/f9Ajaz3D2CtSUMh32ldAAAAAElFTkSuQmCC"/>English</button>
+        </div>
+    </div>
+    <div class="maincontaint">
+        <div class="topbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAehJREFUWEftlzFLHUEUhb+jRIxBtAvxD6TRxiIEEVOksQhCeq1MFxAL0UIeiWAKxcYqjam0F0IKU6QQRcTCyiY/IIJdiKIhoNfZoIGsO7uz+0Z8yNt2zz3343L37IxosEcNxsP9AzKzXmALMGBI0kE9U69rQmbWA+wDj68gjoB+SYdVoSoDmVk3sAs8TTX/DjyX9LMKVCUgM2sHNoFnnqZ7wAtJv8tClQYys1bgi5vOcEGzDeCVpPMyUFWAVoHRwCZrksYCtX9lpYDMbB6YLdMAmHdTqoXWBAOZ2TiwEmqc0r2R9CmkNgjIzEaAdaAlxDRDcwG8lvS5qL4QyMwGgW9AW5FZwfs/LkBfStrO0+UCXaXwDtBZJ8x1+TEwkJfmXqCMFI7ERG6aZwLlpHAsKG+a3wAKSOFYUJlp/h9QiRSOBXUjzdNAy8BErG6BPsvuRzx5rU0DnQCPAo1iyX5J6vIBTQEfImROKGxyGqhJWsoESruY2Xt3EnwX6h6om5OU+GY+RcHYBLp3E5rzrELe3t3eDsltZxaQua8hZ8GbQDQn9C9V72CHpoEFz4KeSerwLPWpq3voqZtxdYtVk7oP+Ao8SRkk5+MVSW89QB+B5JbyIPX+R3LBrHSEDfwvRZcV3jqidywwbDigS38AxCVfqeZfAAAAAElFTkSuQmCC"/></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="button4">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAq5JREFUWEftlz1oFFEUhc8B2blvTEIUEbRQjLFIaW0jYiGCCBpZBYmgpFCwVFBEC4toSlHUYNRCLaIpBBuLFIKtYGXhT7AIIirELObNrNndawZWmR13982MMUbIlHPvOe/bM7PvviGW2MUlxoP/F2hmZma153n9qroXQC+A9fV0P6jqa5KPy+XyeHd39/SfpO5MKAiCDQDOATgCoOBYrKyqowCGfN+fygPWFshae4DkvRQgybUtyaKIPMkK1RLIWnua5OWshvF+ksdF5EYWj6ZA1tr9JB9lMWrRWyO5W0SepvX6DSgMwx5VfTX/HnhpTRx9pUqlsqWzs/NTGr9mQOOqui+NOEPPdWPMiTT9DUDlcrmvVqtF6Sz0VZmbm1vX1dX1xWXcABQEQfT3vugS5awfNcbccWmTQM8BbHOJctbHjDFFlzYJ9B7ARpcoT53kSxHZ6tImgWYB+C5RnrqqfvV9f5VLmwT6BmClS5Sz/tkYs9alTQK9BbDZJcpZf2aM2e7SJoEmAOxwiXLWU+1FDUDW2lMkh3Mu2FZG8qSIXHV5NwCFYdirqm9cohz12Wq12tvR0fHRpW02Oh6qar9LmLF+xhhzKY1mMYbrpIj0kfyeCygSWWsPkXyQxiBFz4SI7CJZSdHb+pC/kHON5LjneUWSVRdU2yNsEATROfoWgBUuo3id5LSqvgCwM3Z/TESi5GvtvNIc8jcBOA/gcAqwiqpeM8ZcAFAKwzB67AdjAPdFZKAdlBPop1mpVFpTKBSK8798D4Ce+mdQheQkgGgov5u/NyIiv7YNVWUYhncBDMSgRkVkkKQ2Syo1UJZHFu9tAXXbGHPsnwBFi9ahbgIYjEE0HSV/PaF4CkEQjMSghowxZ5MpLSpQfY+7AmDK9/2mM3PRgVzv4jLQckKuBFz1H0oH6iVLjDfgAAAAAElFTkSuQmCC"/>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what do you want to play?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAk9JREFUWEftl79rFEEUx993L3c3bziuEERtLBSbNEkn2AgB7bRQEBFsLdKICpZK/gFNZdogiI0Ioo2YxiLETm20EW1SRLC53DFzrO49GdiT+7U7u5c5SXFb3rz5zGffm3czCzpkDw6ZD82FfBUZy1C73T5arVavisjxnMndKIpe1ev1r74Fyo4PCcVxvJQkyVsiOlYA9JuIbjHzZoHYwiFDQsaYTwCWCs8mIhF5wsy3AfwpMy8rdkjIWhsTUXUK8DYRbfnmAdiL4/hFs9n8VVRIfNAA43tRFK1k7b/RDP0PIfdOO8x8btLL5QmtBcjGKOJh+kPMzPVSQswc/E/TWvuvAln8zAzNhdL6zTPU38hT7yFjzDUAi4E6rt9lDrcmIrbX6202Go2ffX5uyYwx1wE8DyQzESMin7XWy0WFSp9tU8h/Y+YzXiEiOk9E79PAFhGtT7FY1pQ7RNR0gyJyV2v92CsE4KWIXHGBANaVUg5y4KfT6SxXKpWPKcgopU4A2PcKOXnnkgaeYuYfB7YhImvtUyK6mbI2mHl1kOs9XEXkjdb6UgiZVqt1pFaruY5acLwoihZHT32vEICLSql3IYSstQ9cu6esLWa+MMr1CX1n5tMhZERkodvt7vavxwAuK6VelxICsKqU2gghZK29QUTPUtauUuokgLH7V16G9tMOMIGEPhDR2bTV72mtH03i+koWwmWUMdbqeV3mvhwqs7AYYI61eqaQMeY+ANcFakZSX5IkWRk8THM39YwkSmGD35tLrT4heC7ky+A8Q74M/QXnPvsl5ttS4wAAAABJRU5ErkJggg=="/>
+
+        </div>
+        
+        
+        <div class="button5">
+            Sign up
+        </div>
+        <div class="button6">
+            Login
+        </div>
+        </div>
+        <div class="spotifyplay">
+            <div class="join">
+                <h2>
+                    Popular artist
+                </h2>
+                <h3>Show all&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                </div>
+            <div class="playlist">
+                <div class="items">
+                <img src="C:\Users\dell\Desktop\spotify\pritamartist.jpg" alt="">
+                <div class="playbut">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg></span>
+                </div>
+                <img src="pritamartist.jpg" alt="">
+                <h4>Pritam</h4>
+                <p>Artist</p>
+
+                </div>
+            
+            <div class="items">
+                <img src="arrahman.jpg" alt="">
+                <div class="playbut">
+                       <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg></span>
+                </div>
+                <h4>A R Rahaman</h4>
+                <p>Artist</p>
+
+                </div>
+                <div class="items">
+                    <img src="art.jpg" alt="">
+                    <div class="playbut">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                          </svg></span>
+                    </div>
+                    <h4>Sachin-Jigar</h4>
+                    <p>Artist</p>
+    
+                    </div>
+                    <div class="items">
+                        <img src="arijit.jpg" alt="">
+                        <div class="playbut">
+                            <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                              </svg></span>
+                        </div>
+                        <h4>Arijit singh</h4>
+                        <p>Artist</p>
+        
+                        </div>
+                        <div class="items">
+                            <img src="ab.jpg" alt="">
+                            <div class="playbut">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                  </svg></span>
+                            </div>
+                            <h4>Anirudh Ravichandra</h4>
+                            <p>Artist</p>
+            
+                            </div>
+            </div>
+            </div>
+        <div class="spotifyplay1">
+            <div class="join">
+            <h2>
+                Popular albums
+            </h2>
+            <h3>Show all&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+            </div>
+            <div class="playlist1">
+                <div class="items1">
+                <img src="honeysingh.jpg" alt="">
+                <div class="playbut">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg></span>
+                </div>
+                <h4>Glory</h4>
+                <p>Yo Yo Honey singh</p>
+
+                </div>
+                    <div class="items1">
+                    <img src="ashiqui.jpg" alt="">
+                    <div class="playbut">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                          </svg></span>
+                    </div>
+                    <h4>Aashiqui</h4>
+                    <p>Mithoon,Ankit Tiwari,Jeet
+                    Gannguli</p>
+    
+                    </div>
+                        <div class="items1">
+                        <img src="love.jpg" alt="">
+                        <div class="playbut">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                              </svg></span>
+                        </div>
+                        <h4>Love Hotel</h4>
+                        <p>Leftovermax</p>
+        
+                        </div>
+                        <div class="items1">
+                            <img src="tum hi ho.jpg" alt="">
+                            <div class="playbut">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                  </svg></span>
+                            </div>
+                            <h4>Tum Jo Mere Ho</h4>
+                            <p>Anuv Jain</p>
+            
+                            </div>
+                            <div class="items1">
+                                <img src="making.jpg" alt="">
+                                <div class="playbut">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                      </svg></span>
+                                </div>
+                                <h4>Making Memorie</h4>
+                                <p>Karan Aujla,lkky</p>
+                
+                                </div>
+                          
+                    
+    </div>
+        </div>
+        <div class="spotifyplay2">
+            <div class="join">
+            <h2>
+                Popular Radio
+            </h2>
+            <h3>Show all&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+            </div>
+            <div class="playlist2">
+                <div class="items2">
+                <img src="radioimg1.jpg" alt="">
+                <div class="playbut">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg></span>
+                </div>
+                <h4>With Atif Aslam,sachin-jigar....</h4>
+                
+
+                </div>
+                <div class="items2">
+                    <img src="radioimg2.jpg" alt="">
+                    <div class="playbut">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                          </svg></span>
+                    </div>
+                    <h4>With Karan ahjila,Shubh,Shidu....</h4>
+                    
+    
+                    </div>
+                    <div class="items2">
+                        <img src="radioimg3.jpg" alt="">
+                        <div class="playbut">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                              </svg></span>
+                        </div>
+                        <h4>with Pritam,Mohit chauhan,Armaan....</h4>
+                        
+        
+                        </div>
+                        <div class="items2">
+                            <img src="radioimg4.jpg" alt="">
+                            <div class="playbut">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                  </svg></span>
+                            </div>
+                            <h4>with KJ Yesudas,Sawranlatha,uma....</h4>
+                            
+            
+                            </div>
+                            <div class="items2">
+                                <img src="radioimg5.jpg" alt="">
+                                <div class="playbut">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                      </svg></span>
+                                </div>
+                                <h4>with Anirud Ravichandra,Harries....</h4>
+                                
+                
+                                </div>
+            </div>
+        
+           <div class="spotifyplay3">
+            <div class="join">
+            <h2>
+            Feature Chart
+            </h2>
+            <h3>Show all&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+            </div>
+            <div class="playlist3">
+                <div class="items3">
+                <img src="topsong1.jpg" alt="">
+                <div class="playbut">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg></span>
+                </div>
+                <h4>Your weekly Update of the most Played...</h4>
+                
+
+                </div>
+                <div class="items3">
+                    <img src="topsong2.jpg" alt="">
+                    <div class="playbut">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                          </svg></span>
+                    </div>
+                    <h4>Your weekly Update of the most Played...</h4>
+                    
+    
+                    </div>
+                    <div class="items3">
+                        <img src="region_global_default.jpg" alt="">
+                        <div class="playbut">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                              </svg></span>
+                        </div>
+                        <h4>Your daily Update of the most Played...</h4>
+                        
+        
+                        </div>
+                        <div class="items3">
+                            <img src="topsong4.jpg" alt="">
+                            <div class="playbut">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                  </svg></span>
+                            </div>
+                            <h4>Your daily Update of the most Played...</h4>
+                            
+            
+                            </div>
+                            <div class="items3">
+                                <img src="topsong5.jpg" alt="">
+                                <div class="playbut">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                      </svg></span>
+                                </div>
+                                <h4>Your daily Update of the most viral track...</h4>
+                                
+                
+                                </div>
+                                </div>
+
+
+                                <div class="spotifyplay4">
+                                    <div class="join">
+                                    <h2>
+                                    Spotify Playlist
+                                    </h2>
+                                    <h3>Show all&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                                    </div>
+                                    <div class="playlist4">
+                                        <div class="items4">
+                                        <img src="sop1.jpg" alt="">
+                                        <div class="playbut">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                              </svg></span>
+                                        </div>
+                                        <h4>Lounch and chill out with music for yours</h4>
+                                        
+                        
+                                        </div>
+                                        <div class="items4">
+                                            <img src="sop2.jpg" alt="">
+                                            <div class="playbut">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                                  </svg></span>
+                                            </div>
+                                            <h4>The biggest songs of the 2020s cover</h4>
+                                            
+                            
+                                            </div>
+                                        
+                                        <div class="items4">
+                                            <img src="sop3.jpg" alt="">
+                                            <div class="playbut">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                                  </svg></span>
+                                            </div>
+                                            <h4>Keer clam and focus with ambition</h4>
+                                            
+                            
+                                            </div>
+                                            <div class="items4">
+                                                <img src="sop4.jpg" alt="">
+                                                <div class="playbut">
+                                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                                      </svg></span>
+                                                </div>
+                                                <h4>Jazz piano ballads to help you focus
+                                                </h4>
+                                                
+                                
+                                                </div>
+                                                <div class="items4">
+                                                    <img src="sop5.jpg" alt="">
+                                                    <div class="playbut">
+                                                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                                          </svg></span>
+                                                    </div>
+                                                    <h4>Chill beats,Lofie vibes new tracks..</h4>
+                                                    
+                                    
+                                                    </div>
+                                    </div>
+          <div class="footer">
+            <ul>
+                <li><h3>Company</h3></li>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the Records</li>
+            </ul>
+            <ul>
+                <li><h3>Communties</h3></li>
+                <li>For the Artitst</li>
+                <li>Developres</li>
+                <li>Advetiesment</li>
+                <li>Investors</li>
+                <li>Vendor</li>
+
+            </ul>
+            <ul>
+                <li><h3>Usefull links</h3></li>
+                <li>Supports</li>
+                <li>Free Moblie App</li>
+            </ul>
+            <ul>
+            <li><h3>Spotify plans</h3></li>
+            <li>Preimum</li>
+            <li>Individual</li>
+            <li>Premium Duo</li>
+            <li>Permium family</li>
+            <li>Permium Students</li>
+            <li>Spotify Free</li></ul>
+            <div class="instagram"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA/tJREFUWEftl1uIl1UUxX+ri1LRS1FWFER0V7SCiCKwpKiM6EG7IiJhQloQWVDSRbMoKirCkm6EGF0spUAwVEoCu5ChpZmRQVAUVI8Z0W171nC+4fOb7zYzPcyD523Of5991uy9ztrrE2NsaYzhYT+gro70rlBETALOBk4EDuxKnH//F/ge2CppR58znYAi4gbgQeDkPglbYr4F7pW0qi1PI6CIOBZYAVw6SiDV4xtS1eZI+qkubxug94DL8qGPgFeAz4Edkv7uAzIixgNTgPOA+cDp+dw6SdN7A4qIGcDb+cAiSY/0AdAWExHjgKeBW3LcTEmrq2dqKxQR7rc5s0rSdSMFExEXAzcCE4C1ucpbgMnAN5KKig1eMQRQRJwJfJUjpkr6cBSAFgDLym2KiFnAyrx3gqQfy/nrAJXbNa6JLxFxOLAQOB84CwhgG/AJ8LikPRHh6r6RL1whaU5EuPLugNdVkly51gq5x88Bv0k6qq46EXFJfoHHNVTvB2C2pE1ZNo521SVtjIjDgN/zuQWSfFcroLuAx4Ddkk6pXhgRFwEflPbfB74EDkqcc7unlX67UNLmco6IcFf+y3v3SHq0C9B9WQi3SzL5Bldu007geFfQhJVkXSnHWCpeA47IKj1R0h+VmH+y2t8vaWkXoMWJDw8AWySdW0k0F3gx702XtK6hpTOBt/Jvbl1B4oGtiLCOuaK9AC1xoMkpyYQt//cvAzclwfxY0gUN/Cku3ZrJvlySRbGc50/AotkLkOeW2/aFJL+ecqKvs9ouk3RbB6AXgJsb8uxJPD3U1JDkbgyuumdftGyXpDMqgHYBpwHPSrq1A9DzwDxgp6SJlTx+ZX5tSyW5G70A1SV6Hbi+rp1VcBFhTfIcWylpdgWQSX5I2lssyRQZMaC7U++LuTZE1IqsEXEt8Gb++w5JT1UA/QUcbGpIeqgLkHvqttW17BhPe+BI4NekVbMSuddXLrsizcFX87P/2XMrtdcSMbAi4oAExMbNa8jgruPQooT+YeA7SUNMWURcnuxE+bm3CeM0SWURNSCT2aT2Wijpya4K/a+jo4Zb5dExX9LyLkBXJ/14Jw/L8R3D1WPG5ste2+Ngn+FaBZNbdpKrn3+bkabBmi5A9ijWG69R2Y8GQGX7MUlSYXUGwrsM2npJhY2tyz+svYjwuPgsK/gvqV02bvusJkBXZofnYOvEkqSo9jsjXjUWttYat5l8f65ckxF8mib8S9nk2wV4Wneuksn3kL699Cm1HTinLk8bID/PJ0qmvBNAzwC7AL+uQW1qJXXNMzWHnkke59SeFzaF7U5O8U5J77bl6fxyLQ6PmU/pUVZl2Md7V2jYmUd4YD+grsLtBSWSmjRewLNTAAAAAElFTkSuQmCC"/></div>
+            <div class="twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAqJJREFUWEftlluIjVEUx39/txe5hBeFRm55Gwl5EEoKTbmmCU9MkVJqKDQj5JbLozyYPHiRh0kyXnkjSYmUREheCC+SwrKXvlMzZ77z7f1xjkadXafz1V5r7d9ea+21lhhiS0OMhyZQLCJND/1zD5nZLGAPsBiYCzwG7gE9kvz79zKzEcBsSU/7Qw4KmZlNAJZJ6o3dpnrfzA6Fsw4DI2vobgGeAMuB3UCbpGcxoL3AGWC9pBupUGa2FbiSKg+czODHSPpY0cvz0DVgE/ADWCvpZuwQM5sEPAfGx2Sz/dvApxDGqe4tSV+KgNwrbZnAT+A80C3pa63DzGwzcDURpiL23vNM0otYyA6GHDheZfwN4KG8LskhBywz8xB3lgByiBWSXlXr5IVsaUjqOzWMvwMu+6//zczsErC9BNA+SWfz5POAhgGeRxsiB7jL/ab+mwksKgHUIckvMWjlAa0E7gP+7P15NmKtkXQrFci9sw54HZ7xjEbQhFxslfQoFeg0sL9BIG7Wn/g4SV5WkkLWCjyEho0mvaGF1MzP3G5vZkdDYexqkJd2SOqpZbvm+GFmHYA/zbF1BPsMTOlfmaN1qCJgZquAUYBX4fY6QR0LhbW7yFaRh+YDD+oEUknmFkkf/gjIlczsArCrTlDtkqL9rnCENTPfP5f1sb/huigp6WJJM7WZLQB83pkHLClJ1udtSNK3FL1UoOHAzlCbjgATUwxnMh6ibZK+p+oUJbXPvNO8zIfXdgKYk2rU0y/T6ZLk38lrAJCZrc7axnSvF4B3/rLLe6An8N2yii6f1+3dEwfCML4xzNajSxj14d0nhFNF02XMXlHIvCj6+OFzzkKgBZicQfqk9xLwf+/afZLexg5L2U9K6hRD9ZJpAsU82fTQf+ehX3sdvCV/aQn+AAAAAElFTkSuQmCC"/></div>
+            <div class="facebook"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAxVJREFUWEfdl1uoTkEUx3//JJfco5R7Ei+iFBEe8CAp8YIkpZRyPRGRe4TI3QvKi3uRlJTwIkS8oMTDUUi5PSDk1vKt2k7f2WfP3rPPcSRTX33tWfOf36yZWWuN+Mea/jEe/g8gMxsNzARGAN2Snzv7DfAauA0cl3Sr7A5Ee8jMWgPzgaVAn8iJaoHdwGFJX2PGRAGZ2VxgO9A1RjTDxr1WI+lE0fhCIDNzkBVFQpH9ayVtzrMNApmZ9x0F5kROFmu2T9KSkHEe0H5gYewsid0X4E7yvyXQChgKtEjpbJS0IUs7E8jMaoBdJWCeAesqk5+X9L56nJnNAo5laM2W1OB7AyAz6wT4BO0jgZ4CIyW9yrI3s6nAuYy+F0B/Sd+q+7KANgFrI2HcbIKkqyF7M5sGnA30L5R0MAhkZr7vbyvb1SES6IWkXmlbM/MzMyTRGQP4IrNaraT+eUATK9H3UiSMm12QNCV1ZgYA7rEGoAHdIZLu/+6rt2VmdgiYVwLojKTpKaB9wKISGusl1XkwDXQXGFZC7LSkGSmgk0C9bwV6FyVNDnnoOdCziUCngHpeK9B7KGlwCOhzJWe1KQF0SpJn/bpmZmWBPkjqGAL6BLTNAXoiaWAJYMzsQKUsWZAz5pOkdiEgD3J9/zDQFWB8jma9q58+1Dc96uYMfixpUEkPeUTukTPmuqSxIQ/tBJb9KQ+ZmW/Fx4IFbKsUb6tCQOOSoBbSqM7mbnOtOob4BzPzJOs63vyCDC8AGi3pRgjIU4cn1u6R25IVh8rcMg8z/ST9zARKVrga2PKXgLys3VM9V1PLj6Z46B3QW5LHvroWKtA8YZ6P8FJjgQyYKOlyeo68EnYvsLgAqrFAmyStz9IuKvKPVA65P4FCrTFAWytVop/TzBbzDPLSYA1kPrvLAP1I3maeSoKtECi5eaMAf+SlX6yxQI+8ApD0oOhcRgElUB7kvPBaCXRJhIuAXiYhxJ/S34tgvD8a6LeYmXmpMCmpmd9J2lE9kZktBzoD9wAvvqLe9MHAGLOK5rQp7aHmhGnUljU30C8b2CQ0e80IdAAAAABJRU5ErkJggg=="/></div>
+         
+        </div> 
+        <hr>
+        <div class="endpart">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+              </svg>
+            2024 Spotify AB</a>
+
+                                                
+
+
+
+    
+        </div>
+        <div class="signup-section">
+            <div class="text-content">
+                <div class="para">
+                <p>
+                    Preview of spotify
+                </p></div>
+                <div class="parapart">
+                <p>
+                    Signup to get unlimited songs and podcast with occasional ads.No credit card needed.
+                </p>
+                <button class="signup-btn">
+                    signup free
+
+                </button></div>
+            </div>
+        </div>
+</body>
+</html>

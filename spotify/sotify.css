@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slidebar{
+    width: 300px;
+    background: black;
+    position: fixed;
+    top: 0;
+    bottom: 0%;
+    padding: 10px
+}
+span{
+    color: white;
+    font-size: 3vh;
+    text-decoration: none;
+}
+.slidebar-nav{
+    background:rgb(47, 46, 46);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.slidebar-nav.logo{
+width: 120px;
+}
+.slidebar-nav.logo img{
+width: 100%;
+}
+.slidebar-nav ul{
+    list-style: none;
+}
+.slidebar-nav ul li{
+    padding:10px 20px;
+}
+.slidebar-nav ul li a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.slidebar-nav ul li a i{
+font-size: 20px;
+margin-right: 10;
+}
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    border-radius: 50;
+    font-size: 15px;
+
+}
+.create-playlist{
+    background-color: black;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.slidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+
+}
+.slidebar-scroll::-webkit-scrollbar{
+    background:grey;
+
+}
+
+.slidebar-scroll::weblit-scrollbar-thumb{
+    background: transparent;
+    width:10px;
+}
+.slidebar-scroll::weblit-scrollbar-thumb{
+    background: grey;
+    width:10px;
+}
+.create-playlist h4{
+    color: white;
+    font-size: 15px;
+}
+.create-playlist p{
+    color: white;
+    font-size: 12px;
+    margin: 12px 0;
+}
+.create-playlist button{
+    padding: 8px 15px;
+    border:0%;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 30%;
+    margin-bottom: 10px;
+    
+}
+.privacy{
+    color: white;
+}
+
